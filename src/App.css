@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+body,
+.container{
+  height:100vh;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav{
+  display:flex;
+  flex-direction: column;
+  background-color:rgba(50, 51, 52, 1);
+  color: white;
+}
+
+.title{
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+
+}
+
+.subsection1{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between ;
+  padding-left: 40px;
+  padding-right: 40px;;
+}
+
+.subsection2{
+  align-self:center;
+}
+
+input{
+width: 285px;
+height: 40px;
+padding: 11px 157px 10px 15px;
+border-radius: 5px;
+border: 1px solid rgba(255, 9, 9, 1);
+background-color: rgba(50, 51, 52, 1);
+color:white;
+font-size: 16px;
+}
+
+input::placeholder {
+  color:white;
+  font-size: 16px;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  gap:10px;
+}
+
+button{
+background-color:rgba(255, 67, 67, 1);
+border-radius: 5px;
+border: none;
+padding-top:6px;
+padding-bottom:6px;
+padding-left: 12px;
+padding-right: 12px;
+color:white;
+font-family: "Inter", sans-serif;
+font-size: 16px;
+font-weight: 400;
+cursor: pointer;
+&:hover{
+  background-color:black;
+  color:red;
+}
+}
+
+
+.oo{
+  color:rgba(255, 10, 10, 1);
+}
+
+.hero{
+    flex-grow: 1; 
+    filter: grayscale(20%);
+    
+}
+
+@media (max-width: 1000px){
+  .subsection1{
+    display: flex;
+    flex-direction:column;
+  }
+
+}
+
+.checkout-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.item-details {
+  margin-top: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.buy-button, .back-button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button {
+  background: #6c757d; 
+}
+
+#fz{
+  height:47px;
+  width:50px;
+  margin-right: 20px;;
+}
+
+@media(max-width:800px) {
+  #fz {
+    display: none;
+  }
+}
